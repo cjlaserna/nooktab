@@ -38,7 +38,6 @@ function music(){
 	}
 	
 	timeNew += (h >= 12) ? "PM" : "AM";
-	
 	var sound = new Howl({
 		src: ['music/' + timeNew + '.mp3']
 	});
@@ -47,6 +46,12 @@ function music(){
 }
 
 time();
+try {
+	sound.resume();
+}
+catch{
+	//pass
+}
 music();
 
 setInterval(time, 1000);
