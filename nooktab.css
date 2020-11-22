@@ -1,0 +1,65 @@
+/* font-family: 'Varela Round', sans-serif; */
+/* palette https://coolors.co/fdf8e3-8cd1d2-55b7a3-756a56-dfdac7 */
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* reset css*/
+button {
+  border: 0;
+  background-color: transparent;
+}
+button:focus {outline:0;}
+html{
+	height: 100%;
+	margin: 0;
+}	
+/* end */
+body{
+	background-color:#fdf8e3;
+	font-family: 'Varela Round', sans serif;
+	color: #756a56;
+}
+
+/* topbar */
+.topbar{
+	background-color:#dfdac7; /* take off after */
+	position:absolute;
+	top:0;
+	width: 100vw;
+}
+.title h1{
+	font-size: 3vw;
+	margin: 5px;
+	text-align:center;
+}
+.title{
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+/* end of topbar */
+
+/* centerpiece */
+.centerpiecewrapper{
+	width: 100vw;
+	height: 100vh;
+}
+.centerpiece{
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+}
+/* clock */
+.centerpiecep{
+	font-size: 2vw;
+	font-weight:bold;
+	display: inline;
+}

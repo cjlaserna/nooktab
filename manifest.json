@@ -1,0 +1,21 @@
+{
+	"manifest_version":2,
+	"name":"NookTab",
+	"description":"Streaming hourly Animal Crossing music that doubles as an idle game!",
+	"version":"1.0",
+	"chrome_url_overrides":{
+		"newtab":"nooktab.html"
+	},
+	"browser_action":{
+		"default_icon":"nooktablogo.png"
+	},
+	"permissions":[
+		"tabs"
+	],
+	"background":{
+		"scripts":[
+			"background.js"
+		],
+		"persistent":"false;"
+	}
+}

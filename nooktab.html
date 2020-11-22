@@ -1,0 +1,59 @@
+<html lang="en">
+	<!-- This website was made by Catherine Laserna -->
+	<!-- palette https://coolors.co/fdf8e3-8cd1d2-55b7a3-756a56-dfdac7 -->
+	<head>
+		<!-- Meta -->
+		<title> Nook Tab </title>
+		<meta charset="UTF-8">
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		
+		<!-- desc / author / keywords-->
+		<meta content="Streaming hourly Animal Crossing music that doubles as an idle game!" name="description">
+		<meta content="Catherine Laserna" name="author">
+		<!-- end -->
+		
+		<!-- compatibility -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+		<!-- end of compatibility -->
+		
+		<!-- End of Meta -->
+		
+		<!-- css -->
+		<link rel = "stylesheet" type = "text/css" href = "nooktab.css" />
+
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		
+		<!-- icon -->
+		<link rel="shortcut icon" type="image/jpg" href='favicon.ico'/>
+
+		<!-- libraries -->
+		<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+		<script>dayjs().format()</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
+		
+		<!-- scripts -->
+		
+	</head>
+	<body>
+	<div class="topbar">
+		<div class="title"><h1>NookTab</h1></div>
+		<div class="mute"></div>
+	</div>
+	<div class="centerpiecewrapper">
+		<div class="centerpiece">
+			<div class="clock">
+				<p class="centerpiecep" id="timeupdate"></p>
+				<span class="centerpiecep"> | </span>
+				<p class="centerpiecep" id="weatherupdate"></weather>
+			</div>
+			<hr>
+		</div>
+	</div>
+	</body>
+	<script type="text/javascript" src="scripts/main.js"></script>
+		<script type="text/javascript" src="scripts/weather.js"></script>
+</html>
