@@ -22,11 +22,27 @@ body{
 	background-color:#fdf8e3;
 	font-family: 'Varela Round', sans serif;
 	color: #756a56;
+	overflow: hidden;
 }
-
+input[type=text]{
+	border: none;
+	background-color: #dfdac7;
+	font-family: 'Varela Round', sans serif;
+	font-size: 1vw;
+	color: #756a56;
+	box-sizing: border-box;
+	padding: 15px;
+	
+	width:25vw;
+	
+	transition: width 0.4s ease-in-out;
+}
+input:focus{
+	width: 50vw;
+	background-color:white;
+}
 /* topbar */
 .topbar{
-	background-color:#dfdac7; /* take off after */
 	position:absolute;
 	top:0;
 	width: 100vw;
@@ -62,4 +78,124 @@ body{
 	font-size: 2vw;
 	font-weight:bold;
 	display: inline;
+}
+/* counter */
+svg{
+	width: 10vw;
+}
+.counter{
+	position: absolute;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.appgrid{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+	margin: 10px;
+}
+.grid-item{
+	//background-color: #dfdac7;
+	border-radius: 10px;
+	margin: 10px;
+	width: 5vw;
+	height: 5vw;
+	font-size: 15px;
+	text-align: center;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	
+	transition: 0.25s ease-in-out;
+}
+.grid-container{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	width: 25vw;
+	height: 25vh;
+	overflow: hidden;
+}
+.appicon{
+	width: 3vw;
+}
+
+#youtube{
+	background-color: #740000;
+}
+#gmail{
+	background-color: #FE7463;
+}
+#twitch{
+	background-color: #1B2848;
+}
+#linkedin{
+	background-color: #00758C;
+}
+#twitter{
+	background-color: #009CBD;
+}
+#github{
+	background-color: #515054;
+}
+.grid-item:hover{
+	background-color: white !important;
+	cursor: pointer;
+}
+
+/* instructions */
+.popup{
+	text-decoration: underline;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 50vw;	
+  background-color: #756a56;
+  color: #fdf8e3;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+/* animations */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
