@@ -120,6 +120,13 @@ function music(){
 	}
 	
 	timeNew += (h >= 12) ? "PM" : "AM";
+	
+	try if (sound.playing() = true){
+		sound.stop();
+	}catch{
+		//pass
+	}
+	
 	var sound = new Howl({
 		src: ['music/' + timeNew + '.mp3'],
 		autoSuspend: false,
@@ -184,4 +191,4 @@ music();
 
 setInterval(addFish, 1000 * 60 * 30)
 setInterval(time, 1000);
-setInterval(music, 1000*60*60);
+setInterval(music, 1000*60*1);
